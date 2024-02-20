@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <title>Age Calculator</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+        <!--google font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
+
+        <!--style-->
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div id="heading">Age Calculator</div>
+        <div id="content">
+            <div class="year">
+                <span></span><input type="number" min="1" max="2024" autofocus id="year-in" value="2024" style="display:none">
+            </div><br>
+            <div class="month">
+                <span></span>
+                <select name="months" style="display: none;">
+                    <option value="1">January</option>
+                    <option value="2">february</option>
+                    <option value="3">March</option>
+                    <option value="4">April</option>
+                    <option value="5">May</option>
+                    <option value="6">June</option>
+                    <option value="7">July</option>
+                    <option value="8">August</option>
+                    <option value="9">September</option>
+                    <option value="10">October</option>
+                    <option value="11">Novermber</option>
+                    <option value="12">December</option>
+                </select>
+            </div><br>
+            <div class="date">        
+                <span></span><input type="number" autofocus value="18" id="date" style="display: none;" min="1" max="31">
+            </div>
+            <br>
+            <button style="display:none">Calculate</button>
+        </div>
+        <div id="age">
+            <span class="result" style="font-size:20px"></span>
+            <span class="result"></span>
+        </div>
+        <div id="deep-age" style="color:#FFF; display: none;">
+            More - 
+            <span id="deep" style="color:#FFF; font-size:18px; font-weight:normal"></span>
+        </div>
+
+        <!--script-->
+        <script src="script.js"></script>
+    </body>
+</html>
